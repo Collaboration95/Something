@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statement</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="csstemp/base.css">
+    <link rel="stylesheet" href="csstemp/ps.css">
+</head>
+<body >
+
+    <%- include('minitemplates/navbar.ejs') %> 
+
+    <div id="problem">
+        <h2>Problem Statement</h2>
+        <p >
+            How might we predict the production of primary crops(unprocessed crops) in China and India based on rainfall, temperature, natural disasters, income level of farmers, farming technology in the country, water resources? 
+        </p>
+        
+        <h2 id="chal">Challenges</h2>
+        <p>
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-md-5 d-flex justify-content-center align-items-center text-start fw-semibold fs-5" style="color: #5b5b59;">
+                    <ul>
+                        <li>More than 2.2 billion people in the region rely on agriculture for their livelihoods.</li>
+                        <li>Rice is by far the most important crop throughout Asia - 90% of the world's production and consumption occurs in this region.</li>
+                        <li>Trends show that rice consumption decreases as income rises, many economists have claimed rice is an inferior good.</li>
+                        <li>The stagnant and declining yields of major crops such as rice and wheat can be ultimately linked to declining investments in agriculture. Public investments in agriculture in India, for instance, have been generally the same since 2004.</li>
+                        <li>Asia and the Pacific accounts for 37% of the world's total emissions from agricultural production, and the People's Republic of China alone accounts for more than 18% of the total.</li>
+                        <li>In most Asian countries, agriculture is the biggest user of water and can reach up to 90% of total water consumption.</li>
+                        <li>With 25% of the world's populations and only 7% of the world's arable land, the agrofood trade is a crucial sector of the People's Republic of China's economy - projected imports of agrofood in the coming decades will have significant implications within Asia.</li>
+
+                    </ul>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5">
+                    <img id='sizegraph' src="https://assets.weforum.org/editor/ni5zpOsvGdwzN8MI_-zEQyIz4TYn7yWYOyPfaGpWFjc.jpg" alt="" style="border-radius: 40px;">
+                  </div>
+                  
+                </div>
+              </div>
+        </p>
+
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide m-5" style="width: 50%; height: 800px;" data-bs-ride="true">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.adb.org/sites/default/files/infographics/thumbnails/adb-infographic-climate-change-and-agriculture-thumbnail.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.adb.org/sites/default/files/infographics/thumbnails/adb-infographic-food-security-two-faces-asia-info.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.asianews.it/files/img/Infographic_World_hunger_the_setbacks_of_asia.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev c-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next c-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+    </div>
+    
+    
+
+
+
+    <%- include('minitemplates/footer.ejs')  %> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+.type{
+    padding: 50px;
+    color: #e98074;
+}
+
+
+b{
+    color: #e98074;
+}
+i{
+    color: #e98074;
+    text-decoration: underline wavy 1px;
+}
+
+#mainholder2{
+    position: relative;
+    top:100px;
+    width: 90%;
+    left:140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    background-color:#d8c3a5 ;
+    box-shadow: 0 5px 20px ;
+    color: #8e8d8a;
+}
+.card:hover{
+    color:white
+
+}
+.navbar-nav{
+    position: relative;
+    right:20px;
+}
+.navbar-toggler{
+
+    background-color: #d8c3a5;
+}
+
+.footer{
+    top: 200px;
+}
+#linkimg{
+    width: 25px;
+    aspect-ratio: 1;
+}
+.connect{
+    transition: .4s;
+}
+.connect:hover{
+    background-color: #8e8d8a;
+
+}
+
+.ppic{
+    height:400px;
+}
