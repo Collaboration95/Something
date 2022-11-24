@@ -20,42 +20,77 @@
 
     <h2 >PROJECT VIDEO</h2>
     <div class="d-flex justify-content-center">
-    <iframe width="1600" height="900" src="https://www.youtube.com/embed/O_WbmIIy4vk"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        <iframe width="1600" height="900" src="https://www.youtube.com/embed/wu7PjKawjwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <iframe width="1600" height="900" src="https://www.youtube.com/embed/O_WbmIIy4vk"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   -->
     </div>
 
     <div class="code">
         <h2 class="mb-5 pb-5">OUR CODE</h2>
-        <h3 class="px-5 mt-0 divider"><b> Cleaning Data </b></h3>
-        <h4 class="sub">Getting the values of GDP contributed by agriculture</h4>
+        <h3 class="px-5 mt-0 divider"><b> Setting Up Environment </b></h3>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/Screenshot_2022-11-22_at_1.12.07_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669094002265" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.44.32_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301682355" alt="">
         </div>
+        <h3 class="px-5 mt-0 divider"><b> Cleaning Data </b></h3>
         <h4 class="sub">Getting the values of net crop production</h4>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/Screenshot_2022-11-22_at_1.21.02_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669094501804" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_11.01.15_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669302096470" alt="">
+            
         </div>
-        
+        <p>
+            Our data for crop production was obtained through 2 different csv files, to make the process easier and simpler we created a function to help give us the required values. If you are keen to go through the entire csv data, feel free to check our <a href="#resource" style="color:blue; font-size:inherit">Files and Documentation</a>.
+        </p>
         <h3 class="px-5 mt-0 divider"><b> Functions</b></h3>
+        <h4 class="sub">Normalize-z</h4>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/Screenshot_2022-11-22_at_1.28.25_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669095083641" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.44.43_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301680237" alt="">
         </div>
+        <p>We normalizing every value in a dataset such that the mean of all of the values is 0 (close to) and the standard deviation is 1 (close to). </p>
+        <h4 class="sub">Prepare Features and Target</h4>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/Screenshot_2022-11-22_at_1.29.11_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669095083684" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.45.08_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301683353" alt="">
         </div>
+        <p>The prepare_feature and prepare_target functions are used to conver the data of type DataFrame to that of type narray. These functions enable us to use our data in array operations which make the calculations much easier than if we iterate over each indivdual element.</p>
+        <h4 class="sub">Prediction Function</h4>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/adaew_oVlJBwetr?ik-sdk-version=javascript-1.4.3&updatedAt=1669095282988" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.45.24_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301680793" alt="">
         </div>
+        <p>The predict function is used to return a column vector. The prdict function calls upon the calc_linear function which is a function that performs matrix multiplication</p>
+        <h4 class="sub">Analyse Functions</h4>
+        <div class='codesnippet' >
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.45.51_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301683003" alt="">
+        </div>
+        <p>The r2_square and mean_squared_error functions are purely to help us analyse our results and check whether the value we are predicting is withing reasonaable range of our data that has been previously trained. </p>
+        <h4 class="sub">Cost Function and Gradient Descent</h4>
+        <div class='codesnippet' >
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.46.07_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301680908" alt="">
+        </div>
+        <p>A cost function is a measure of how wrong the model is in terms of its ability to estimate the relationship between X and y. This is typically expressed as a difference or distance between the predicted value and the actual value. Gradient descent is a iterative optimization algorithm for finding a local minimum of a differentiable function. </p>
         
         
         <h3 class="px-5 mt-0 divider"><b> Prediction</b></h3>
-   
+        <h4 class="sub">China</h4>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/wfqewef_qLzcjjDHp?ik-sdk-version=javascript-1.4.3&updatedAt=1669095333133" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.46.36_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301682584" alt="">
+        </div>
+        <h4 class="sub">India</h4>
+        <div class='codesnippet' >
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.46.49_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301680813" alt="">
         </div>
         <div class='codesnippet' >
-            <img src="https://ik.imagekit.io/xpxacmqcd/Screenshot_2022-11-22_at_1.30.29_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669095083534" alt="">
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.46.59_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301679857" alt="">
         </div>
 
+        <p>Breakdown of the function into India and China as it helps to simplify the prediction by finding individual quantities. The model is using a test size of 40% and a training size of 60%, initially our test size was 30% and our training size was 70% but after a few discussions we drew to the conclussion that since our model has a few years of records and quiet a few parameters it would be best to increase our test population so that we can see as many potential values in our predictions to compare with the actual values</p>
+
+        <div class='codesnippet' >
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.47.10_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301679901" alt="">
+        </div>
+        <div class='codesnippet' >
+            <img src="https://ik.imagekit.io/xpxacmqcd/Code_Pics/Screenshot_2022-11-24_at_10.47.17_PM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669301683984" alt="">
+        </div>
+        <p>
+            The lower the value of mean squared variables, the better suited our model with our given parameters. Since our graph of net production with time is a linear graph we expected that our r2_square function would return a value close to 1 whereas the mean_squared_error give a value closer to 0.
+        </p>
         <div id="resource">
             <h3>Files and Documentation</h3>
             <div class="container text-center">

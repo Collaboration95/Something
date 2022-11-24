@@ -10,7 +10,7 @@
     height: 50px;
     padding:20px;
     font-size:.9em;
-    top:.8em;
+    top:-1em;
     color:#e85a4f ;
     text-decoration: none;
     border: #e85a4f 1px solid;
@@ -32,6 +32,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 #dd{
     position: relative;
@@ -44,8 +45,8 @@ h2{
 #resource{
     position: relative;
     left: 20px;
-    width: 98%;
-    height:400px;
+    width: 99%;
+    height:600px;
     background-color:#d8c3a5 ;
     color:#eae7dc;
     display: flex;
@@ -53,6 +54,7 @@ h2{
     justify-content: start;
     flex-direction: column;
     border-radius: 40px;
+    top: 10em;
 }
 #resource h3{
     margin-top: 40px;
@@ -60,6 +62,14 @@ h2{
 }
 ul{
     text-align: start;
+}
+.inner{
+    padding-top: 20px;
+    margin-top: 100px;
+}
+.minigraph{
+    width: 320px;
+    height:240px
 }
 h4{
     margin: 30px;
@@ -72,9 +82,16 @@ a{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1200px){
+
+@media only screen and (max-width: 600px){
     /*Tablets [601px -> 1200px]*/
-   
+    #imgholder{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     h3{
         margin: 0%; 
         padding: 0%;
@@ -94,20 +111,40 @@ a{
         padding:1em;
         margin: auto;
     }
+    .inner{
+        position: relative;
+        top:-20em;
+    }
     #readm{
         width: 10em;
         height:2.5em;
         padding:1.3em;
         font-size:1em;
+        position: relative;
+        top:0em;
+    }
+    .minigraph{
+        width: 490px;
+        height:340px;
+        margin:10px
     }
     #resource{
         width: 80%;
         margin: auto;
     }
+    #resource{
+        font-size: .9em;
+    }
 }
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-    
+@media only screen and (max-width: 380px){
+	
+    #imgholder{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     h2{
         font-size: 2em;
         top:-2em;
@@ -117,6 +154,11 @@ a{
         height:2.5em;
         padding:1.3em;
         font-size:1em;
+        top:2.5em
+    }
+    #resource{
+        font-size: .8em;
+        top:12em
     }
     .footer{
         top:14em;

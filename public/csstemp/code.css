@@ -132,6 +132,13 @@ a{
         font-size: 2em;
         top:-2em;
     }
+    #resource{
+        position: relative;
+        left:-0em;
+        width: 80%;
+        margin: auto;
+        height: 34em;
+    }
     #readm{
         width: 10em;
         height:2.5em;

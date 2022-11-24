@@ -108,9 +108,10 @@ i{
         margin-bottom: 1.4em;
         width: 35em ;
         height: 40em;
+        
     }
     .ppic{
-        height:30em;
+        height:20em;
     }
 }
 @media only screen and (max-width: 600px){
@@ -131,11 +132,12 @@ i{
     .card{
         margin-bottom: 1.4em;
         width: 20em ;
-        height: 30em;
+        height: 36em;
+        
         
     }
     .ppic{
-        height:18em;
+        height:21.5em;
     }
     .footer{
         top:0em;
@@ -166,11 +168,12 @@ i{
     .card{
         margin-bottom: 1.4em;
         width: 20em ;
-        height: 30em;
+        height: 35em;
+        
         
     }
     .ppic{
-        height:18em;
+        height:22.5em;
     }
     .footer{
         top:0em;
