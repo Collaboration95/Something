@@ -28,6 +28,7 @@ i{
     background-color:#d8c3a5 ;
     box-shadow: 0 5px 20px ;
     color: #8e8d8a;
+    width: 18rem;
 }
 .card:hover{
     color:white
@@ -59,4 +60,65 @@ i{
 
 .ppic{
     height:400px;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    #mainholder2{
+        width: 20em;
+        left:12.5em;
+    }
+    .container{
+        position: relative;
+        left:-2em;
+    }
+    #r2{
+        position: relative;
+        left:-6.8em;
+        top: -6em;
+    }
+    .card{
+        margin-bottom: 1.4em;
+        width: 25em ;
+        height: 40em;
+    }
+    .ppic{
+        height:30em;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    #mainholder2{
+        width: 15em;
+        left:7.5em;
+    }
+    .container{
+        position: relative;
+        left:-5em;
+    }
+    #r2{
+        position: relative;
+        left:-6.8em;
+        top: -6em;
+    }
+    .card{
+        margin-bottom: 1.4em;
+        width: 20em ;
+        height: 30em;
+        
+    }
+    .ppic{
+        height:18em;
+    }
+    .footer{
+        top:0em;
+        height: 18%;
+    }
+    .footer ul{
+        left: 1em;
+        align-items: flex-start;
+        font-size: .76em;
+    }
 }

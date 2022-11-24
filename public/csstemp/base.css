@@ -5,7 +5,7 @@ body{
 }
 #mainholder{
     width: 100%;
-    height:100VH;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,17 +16,18 @@ body{
 h1{
     background-image: url(https://wallpapercave.com/wp/wp2449538.jpg); 
     display: flex;
-    margin-top: 50vh;
+    margin-top: 60vh;
     background-size:cover;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    font-size: 300px;
+    font-size: 18.75em;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     font-weight: 800;
+    top:.35em;
     -webkit-font-smoothing: antialiased;
     flex-wrap: wrap;
     
@@ -35,7 +36,7 @@ h1{
 
 h2{
     position: relative;
-    padding: 200px;
+    padding: 3em;
     font-size: 100px;
     text-align: center;
     font-weight: bold;
@@ -46,7 +47,7 @@ h2{
 }
 .navbar-nav{
     position: relative;
-    right:20px;
+    right:1.25em;
 }
 .nav-link{
     color: #8e8d8a;
@@ -63,9 +64,9 @@ h2{
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 80px;
-    padding:20px;
+    width: 10.625em;
+    height:5em;
+    padding:1em;
     font-size:2em;
     color:#e85a4f ;
     text-decoration: none;
@@ -76,22 +77,22 @@ h2{
 #readm:hover{
     background-color: #e85a4f ;
     color: #eae7dc;
-    border-radius: 20px;
+    border-radius: 1.25em;
 }
 
 .footer{
 
     display: flex;
     align-items: center;
-    top: 700px;
+    top: 43.75em;
     height:25%;
-    height:280px;
+    height:17.5em;
     background-color: #d8c3a5;
     position: relative;
 }
 .footer ul{
     position: relative;
-    left:130px;
+    left:8.125em;
     width: 75%;
     list-style-type: none;
     display: flex;
@@ -101,7 +102,7 @@ h2{
     
 }
 .footer li{
-    padding: 10px;
+    padding: 0.625em;
 }
 .footer a{
     color: white;
@@ -111,5 +112,50 @@ h2{
 .footer a:hover{
     color: #8e8d8a;
     text-decoration: none;
+    
+}
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    h1{
+        font-size: 9em;
+    }
+    h2{
+        font-size: 5em;
+        padding:2em;
+    }
+    #readm{
+        width: 10em;
+        height:2.5em;
+        padding:1.3em;
+        font-size:1em;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    h1{
+        font-size: 5em;
+        top:-2em;
+    }
+    h2{
+        font-size: 2em;
+        top:-2em;
+    }
+    #readm{
+        width: 10em;
+        height:2.5em;
+        padding:1.3em;
+        font-size:1em;
+    }
+    .footer{
+        top:14em;
+        height: 18%;
+    }
+    .footer ul{
+        left: 1em;
+        align-items: flex-start;
+        font-size: .76em;
+    }
     
 }

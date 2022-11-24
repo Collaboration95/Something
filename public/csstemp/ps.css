@@ -34,4 +34,82 @@ p{
 .carousel{
     position: relative;
     top:109px;
+    width: 50%;
+    height: 800px;
+}
+.footer{
+
+
+    top: 0em;
+
+ 
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    p{
+        font-size: 1.2em;
+    }
+
+    h2{
+        font-size: 5em;
+        padding:1em;
+    }
+    #readm{
+        width: 10em;
+        height:2.5em;
+        padding:1.3em;
+        font-size:1em;
+    }
+    .carousel{
+        width: 95%;
+    }
+    .footer{
+        top:0em;
+        height: 18%;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    
+    p{
+        padding-top: 1em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    ul{
+        font-size: .8em;
+    }
+    h2{
+        position: relative;
+        top: 1em;
+        font-size: 3em;
+        padding:.8em;
+    }
+    #readm{
+        width: 10em;
+        height:2.5em;
+        padding:1.3em;
+        font-size:1em;
+    }
+    .carousel{
+        width: 95%;
+    
+    }
+    
+    .footer{
+        top:0em;
+        height: 18%;
+    }
+    .footer ul{
+        left: 1em;
+        align-items: flex-start;
+        font-size: .76em;
+    }
+    .c-btn{
+    
+        position: absolute;
+        top:-350px;
+        z-index: 10;
+    }
 }
