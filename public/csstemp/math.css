@@ -5,11 +5,12 @@
     align-items: center;
     position: relative;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 150px;
     height: 50px;
     padding:20px;
     font-size:.9em;
+    top:.8em;
     color:#e85a4f ;
     text-decoration: none;
     border: #e85a4f 1px solid;
@@ -21,11 +22,22 @@
     color: #eae7dc;
     border-radius: 20px;
 }
+h2{
+    position: relative;
+    top:0em;
+    margin-bottom: 1em;
+}
+#imgholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #dd{
     position: relative;
-    left:250px;
-    width: 1300px;
-    height:700px;
+
+    width: 1000px;
+    height:500px;
     margin-bottom: 50px;
     margin-top: 50px;
 }

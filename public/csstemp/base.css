@@ -22,12 +22,12 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    font-size: 18.75em;
+    font-size: 16.75em;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     font-weight: 800;
-    top:.35em;
+    top:-.5em;
     -webkit-font-smoothing: antialiased;
     flex-wrap: wrap;
     
@@ -36,7 +36,8 @@ h1{
 
 h2{
     position: relative;
-    padding: 3em;
+    top:2em;
+    padding: 0em;
     font-size: 100px;
     text-align: center;
     font-weight: bold;
@@ -51,6 +52,7 @@ h2{
 }
 .nav-link{
     color: #8e8d8a;
+    font-size:.85em;
     transition:.5s ease-in-out;
 }   
 
@@ -60,14 +62,17 @@ h2{
 }
 
 #readm{
+    position: relative;
+    top: 15em;
+    margin-bottom: 5em;
     display: flex;
     background-color: transparent;
     justify-content: center;
     align-items: center;
-    width: 10.625em;
-    height:5em;
-    padding:1em;
-    font-size:2em;
+    width: 7.625em;
+    height:3em;
+    padding:.8em;
+    font-size:1.3em;
     color:#e85a4f ;
     text-decoration: none;
     border: #e85a4f 1px solid;
@@ -158,4 +163,31 @@ h2{
         font-size: .76em;
     }
     
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    h1{
+        font-size: 4em;
+        top:-2em;
+    }
+    h2{
+        font-size: 2em;
+        top:-2em;
+    }
+    #readm{
+        width: 10em;
+        height:2.5em;
+        padding:1.3em;
+        font-size:1em;
+    }
+    .footer{
+        top:14em;
+        height: 18%;
+    }
+    .footer ul{
+        left: 1em;
+        align-items: flex-start;
+        font-size: .76em;
+    }
 }
