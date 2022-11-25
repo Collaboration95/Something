@@ -97,6 +97,7 @@ a{
     h3{
         margin: 0%;
     }
+    
     #dd{
         left:6em;
         width: 500px;
@@ -132,6 +133,10 @@ a{
     h2{
         font-size: 2em;
         top:-2em;
+    }
+    #codehead{
+        position: relative;
+        top: 60px;
     }
     #resource{
         position: relative;
